@@ -1,2 +1,3 @@
 *.json
 credentials/
+.ipynb_checkpoints/
