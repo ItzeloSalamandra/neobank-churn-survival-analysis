@@ -12,3 +12,4 @@ scikit-learn
 shap
 lifelines
 plotly
+streamlit
