@@ -99,10 +99,13 @@ try:
     st.plotly_chart(fig_2d, use_container_width=True)
 
     st.info(
-        "Churned users don't occupy a distinct region of the PCA space — they're "
-        "mixed throughout the cloud. This is consistent with the loadings: PC1/PC2 "
-        "mostly capture transactional volume and diversity, not the variables that "
-        "actually predict churn well (num_contacts, plan)."
+        "Looking closely, there IS a visible concentration of churned users around "
+        "PC1 ≈ -3 to -1 — not a clean separation, but a real density gradient. "
+        "Interestingly, churn rate isn't monotonic across PC1: it peaks at the second-lowest "
+        "decile (~36%), not at the very lowest one (~15%). The lowest PC1 decile mixes in "
+        "the 'slow starter' users (zero activity in the observation window who activated "
+        "later and did NOT churn), which pulls its average down. From that peak onward, "
+        "the pattern is a clean, monotonic decline: more activity consistently means less churn."
     )
 
     with st.expander("Explore in 3D (drag to rotate)"):
