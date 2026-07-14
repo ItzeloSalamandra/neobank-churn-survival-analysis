@@ -5,3 +5,9 @@ pyarrow
 jupyter
 ipykernel
 db-dtypes
+matplotlib
+seaborn
+scipy
+scikit-learn
+shap
+lifelines

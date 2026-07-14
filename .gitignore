@@ -1,3 +1,5 @@
 *.json
 credentials/
 .ipynb_checkpoints/
+venv/
+data/
